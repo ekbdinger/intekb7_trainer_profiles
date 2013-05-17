@@ -316,6 +316,12 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['sorts']['field_tr_last_name_value']['id'] = 'field_tr_last_name_value';
   $handler->display->display_options['sorts']['field_tr_last_name_value']['table'] = 'field_data_field_tr_last_name';
   $handler->display->display_options['sorts']['field_tr_last_name_value']['field'] = 'field_tr_last_name_value';
+  /* Filter criterion: Profile: Group (field_tr_location) */
+  $handler->display->display_options['filters']['field_tr_location_value_1']['id'] = 'field_tr_location_value_1';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['table'] = 'field_data_field_tr_location';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['field'] = 'field_tr_location_value';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['group'] = 1;
   /* Filter criterion: Profile: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
@@ -323,10 +329,12 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'trainer_profile' => 'trainer_profile',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Profile: Group (field_tr_location) */
   $handler->display->display_options['filters']['field_tr_location_value']['id'] = 'field_tr_location_value';
   $handler->display->display_options['filters']['field_tr_location_value']['table'] = 'field_data_field_tr_location';
   $handler->display->display_options['filters']['field_tr_location_value']['field'] = 'field_tr_location_value';
+  $handler->display->display_options['filters']['field_tr_location_value']['group'] = 1;
   $handler->display->display_options['filters']['field_tr_location_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_tr_location_value']['expose']['operator_id'] = 'field_tr_location_value_op';
   $handler->display->display_options['filters']['field_tr_location_value']['expose']['label'] = 'Group';
@@ -384,6 +392,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['field_tr_role_value']['id'] = 'field_tr_role_value';
   $handler->display->display_options['filters']['field_tr_role_value']['table'] = 'field_data_field_tr_role';
   $handler->display->display_options['filters']['field_tr_role_value']['field'] = 'field_tr_role_value';
+  $handler->display->display_options['filters']['field_tr_role_value']['group'] = 1;
   $handler->display->display_options['filters']['field_tr_role_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_tr_role_value']['expose']['operator_id'] = 'field_tr_role_value_op';
   $handler->display->display_options['filters']['field_tr_role_value']['expose']['label'] = 'Role';
@@ -561,6 +570,12 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['sorts']['field_tr_last_name_value']['id'] = 'field_tr_last_name_value';
   $handler->display->display_options['sorts']['field_tr_last_name_value']['table'] = 'field_data_field_tr_last_name';
   $handler->display->display_options['sorts']['field_tr_last_name_value']['field'] = 'field_tr_last_name_value';
+  /* Filter criterion: Profile: Group (field_tr_location) */
+  $handler->display->display_options['filters']['field_tr_location_value_1']['id'] = 'field_tr_location_value_1';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['table'] = 'field_data_field_tr_location';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['field'] = 'field_tr_location_value';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_tr_location_value_1']['group'] = 1;
   /* Filter criterion: Profile: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
@@ -568,10 +583,12 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'trainer_profile' => 'trainer_profile',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Profile: Group (field_tr_location) */
   $handler->display->display_options['filters']['field_tr_location_value']['id'] = 'field_tr_location_value';
   $handler->display->display_options['filters']['field_tr_location_value']['table'] = 'field_data_field_tr_location';
   $handler->display->display_options['filters']['field_tr_location_value']['field'] = 'field_tr_location_value';
+  $handler->display->display_options['filters']['field_tr_location_value']['group'] = 1;
   $handler->display->display_options['filters']['field_tr_location_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_tr_location_value']['expose']['operator_id'] = 'field_tr_location_value_op';
   $handler->display->display_options['filters']['field_tr_location_value']['expose']['label'] = 'Group';
@@ -629,6 +646,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['field_tr_role_value']['id'] = 'field_tr_role_value';
   $handler->display->display_options['filters']['field_tr_role_value']['table'] = 'field_data_field_tr_role';
   $handler->display->display_options['filters']['field_tr_role_value']['field'] = 'field_tr_role_value';
+  $handler->display->display_options['filters']['field_tr_role_value']['group'] = 1;
   $handler->display->display_options['filters']['field_tr_role_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_tr_role_value']['expose']['operator_id'] = 'field_tr_role_value_op';
   $handler->display->display_options['filters']['field_tr_role_value']['expose']['label'] = 'Role';
@@ -685,6 +703,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['field_tr_state_value']['id'] = 'field_tr_state_value';
   $handler->display->display_options['filters']['field_tr_state_value']['table'] = 'field_data_field_tr_state';
   $handler->display->display_options['filters']['field_tr_state_value']['field'] = 'field_tr_state_value';
+  $handler->display->display_options['filters']['field_tr_state_value']['group'] = 1;
   $handler->display->display_options['filters']['field_tr_state_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_tr_state_value']['expose']['operator_id'] = 'field_tr_state_value_op';
   $handler->display->display_options['filters']['field_tr_state_value']['expose']['label'] = 'Location';

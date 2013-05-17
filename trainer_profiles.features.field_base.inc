@@ -281,7 +281,7 @@ function trainer_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'image',
     'settings' => array(
-      'default_image' => 3146,
+      'default_image' => 3331,
       'profile2_private' => 0,
       'uri_scheme' => 'public',
     ),

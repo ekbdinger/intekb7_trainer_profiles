@@ -221,6 +221,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    5 => '5',
     49 => '49',
   );
   $handler->display->display_options['cache']['type'] = 'none';
@@ -679,6 +680,63 @@ function trainer_profiles_views_default_views() {
     8 => 0,
     47 => 0,
     48 => 0,
+  );
+  /* Filter criterion: Profile: Location (field_tr_state) */
+  $handler->display->display_options['filters']['field_tr_state_value']['id'] = 'field_tr_state_value';
+  $handler->display->display_options['filters']['field_tr_state_value']['table'] = 'field_data_field_tr_state';
+  $handler->display->display_options['filters']['field_tr_state_value']['field'] = 'field_tr_state_value';
+  $handler->display->display_options['filters']['field_tr_state_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_tr_state_value']['expose']['operator_id'] = 'field_tr_state_value_op';
+  $handler->display->display_options['filters']['field_tr_state_value']['expose']['label'] = 'Location';
+  $handler->display->display_options['filters']['field_tr_state_value']['expose']['operator'] = 'field_tr_state_value_op';
+  $handler->display->display_options['filters']['field_tr_state_value']['expose']['identifier'] = 'field_tr_state_value';
+  $handler->display->display_options['filters']['field_tr_state_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    3 => 0,
+    1 => 0,
+    23 => 0,
+    21 => 0,
+    36 => 0,
+    43 => 0,
+    39 => 0,
+    25 => 0,
+    46 => 0,
+    9 => 0,
+    31 => 0,
+    19 => 0,
+    14 => 0,
+    15 => 0,
+    13 => 0,
+    5 => 0,
+    22 => 0,
+    12 => 0,
+    30 => 0,
+    38 => 0,
+    11 => 0,
+    42 => 0,
+    40 => 0,
+    29 => 0,
+    32 => 0,
+    35 => 0,
+    41 => 0,
+    28 => 0,
+    16 => 0,
+    45 => 0,
+    27 => 0,
+    24 => 0,
+    37 => 0,
+    26 => 0,
+    34 => 0,
+    18 => 0,
+    17 => 0,
+    33 => 0,
+    44 => 0,
+    20 => 0,
+    7 => 0,
+    8 => 0,
+    47 => 0,
+    48 => 0,
+    49 => 0,
   );
 
   /* Display: Page */

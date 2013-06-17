@@ -143,7 +143,7 @@ function trainer_profiles_field_default_field_instances() {
     'bundle' => 'trainer_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Set this field to "None" to remove someone from the Trainer Profiles Page',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -330,6 +330,7 @@ function trainer_profiles_field_default_field_instances() {
   t('Location');
   t('Picture');
   t('Role');
+  t('Set this field to "None" to remove someone from the Trainer Profiles Page');
   t('Start Date');
 
   return $field_instances;

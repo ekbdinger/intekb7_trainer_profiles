@@ -304,7 +304,7 @@ function trainer_profiles_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'training/profile_pics',
       'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '1 MB',
+      'max_filesize' => '10 MB',
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 0,

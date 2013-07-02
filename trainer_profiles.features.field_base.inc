@@ -104,7 +104,7 @@ function trainer_profiles_field_default_field_bases() {
         't' => 'Texas',
         'o' => 'Off Site Trainer (OST)',
         'cbo|' => 'CBO',
-        'ttt' => 'Train the Trainer (TTT)',
+        'ttt' => 'Train the Trainer / Training Education Team',
         'eis' => 'EIS',
       ),
       'allowed_values_function' => '',
@@ -136,7 +136,8 @@ function trainer_profiles_field_default_field_bases() {
       'allowed_values' => array(
         'e' => 'EMR Trainer',
         'c' => 'CBO Trainer',
-        't' => 'Train the Trainer (TTT)',
+        't' => 'TTT',
+        'tet' => 'TET',
         'i' => 'EIS',
       ),
       'allowed_values_function' => '',

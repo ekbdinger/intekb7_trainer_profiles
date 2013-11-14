@@ -20,6 +20,7 @@ function trainer_profiles_image_default_styles() {
   // Exported image style: trainer_profile_pic.
   $styles['trainer_profile_pic'] = array(
     'name' => 'trainer_profile_pic',
+    'label' => 'trainer_profile_pic',
     'effects' => array(
       1 => array(
         'label' => 'Scale',

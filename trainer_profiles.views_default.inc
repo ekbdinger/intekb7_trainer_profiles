@@ -33,7 +33,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -148,7 +148,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['filters']['uid']['value'] = '';
   $handler->display->display_options['filters']['uid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['uid']['expose']['operator_id'] = 'uid_op';
-  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Name';
+  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Username';
   $handler->display->display_options['filters']['uid']['expose']['operator'] = 'uid_op';
   $handler->display->display_options['filters']['uid']['expose']['identifier'] = 'uid';
   $handler->display->display_options['filters']['uid']['expose']['remember_roles'] = array(
@@ -197,6 +197,12 @@ function trainer_profiles_views_default_views() {
     8 => 0,
     47 => 0,
     48 => 0,
+    49 => 0,
+    50 => 0,
+    51 => 0,
+    52 => 0,
+    53 => 0,
+    54 => 0,
   );
 
   /* Display: Page */
@@ -221,6 +227,7 @@ function trainer_profiles_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     3 => '3',
+    55 => '55',
     5 => '5',
     49 => '49',
   );
